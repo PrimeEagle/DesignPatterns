@@ -116,10 +116,10 @@ It's beneficial when you need to exchange data between subsystems or across the 
 A multi-tier architecture that separates presentation, business logic, data access, and data storage.
 
 ### [Onion Architecture Pattern](https://medium.com/@alessandro.traversi/understanding-onion-architecture-an-example-folder-structure-9c62208cc97d#:~:text=Onion%20Architecture%20is%20a%20software,easier%20to%20evolve%20over%20time.)
-## Domain-Driven Design Patterns
 A loosely coupled architectural design focused on separation of concerns, which uses different layers to manage the flow of data.
 
 
+## Domain-Driven Design Patterns
 
 ### [Domain Service]
 When an operation does not conceptually belong to any object and yet pertains to the domain layer, it could be implemented using the Domain Service pattern. These services hold domain logic that doesn't naturally fit within a domain object.

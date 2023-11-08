@@ -78,7 +78,7 @@ Provides a way to evaluate language grammar or expression for a language which c
 
 ## Concurrency Patterns
 
-### [Active Object]([https://www.state-machine.com/active-object](https://www.topcoder.com/thrive/articles/Concurrency%20Patterns%20-%20Active%20Object%20and%20Monitor%20Object))
+### [Active Object](https://www.state-machine.com/active-object)
 Decouples method execution from method invocation that reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.
 
 ### [Monitor Object](https://www.topcoder.com/thrive/articles/Concurrency%20Patterns%20-%20Active%20Object%20and%20Monitor%20Object)
@@ -96,24 +96,30 @@ Static or "global" memory local to a thread.
 
 ## Enterprise Application Patterns
 
-### [Repository Pattern]
+### [Repository Pattern](https://medium.com/@pererikbergman/repository-design-pattern-e28c0f3e4a30)
 The Repository pattern is used to separate the logic that retrieves data from a database (or any other data source) from the business logic of your application. Instead of having the domain logic communicate directly with the database, it interacts with a repository instead, which handles the connection, commands, and transactions.
 This pattern is commonly used in scenarios where you want to simplify data access by separating it from the complex business rules and processing.
 
-### [Unit of Work Pattern]
+### [Unit of Work Pattern](https://mono.software/2017/01/13/unit-of-work-a-design-pattern/)
 This pattern maintains a list of objects affected by a business transaction and coordinates the writing out of changes. Essentially, it keeps track of everything you do during a business transaction that can affect the database and isolates this work from other transactions.
 You'd use this pattern to ensure that all operations within a transaction are committed or rolled back as one single unit.
 
-### [Service Layer Pattern]
+### [Service Layer Pattern](https://docs.oracle.com/cd/E93130_01/service_layer/service%20layer%20API/Content/Service%20Layer%20Architecture/Service%20Layer%20Architecture.htm)
 The Service Layer is a design pattern that aims to organize the services that your application offers and provides a set of high-level APIs. These APIs coordinate responses in a complex system (e.g., retrieving data from repositories, processing, and then returning a response).
 This pattern is useful when you want a unified, orchestrated set of operations available to your system, especially if these operations involve interactions between different back-end systems or require specific sets of rules and logic.
 
-### [Data Transfer Object (DTO) Pattern]
+### [Data Transfer Object (DTO) Pattern](https://medium.com/@orcunyilmazoy/the-dto-pattern-data-transfer-objects-8146b262636e)
 DTOs are simple objects that should not contain any business logic but may contain serialization and deserialization mechanisms for transferring data over the network.
 It's beneficial when you need to exchange data between subsystems or across the network, and you don't want to share complex domain objects.
 
+### [n-Tier Architecture Pattern](https://medium.com/geekculture/n-tier-architecture-explained-5d2e0246c354)
+A multi-tier architecture that separates presentation, business logic, data access, and data storage.
 
+### [Onion Architecture Pattern](https://medium.com/@alessandro.traversi/understanding-onion-architecture-an-example-folder-structure-9c62208cc97d#:~:text=Onion%20Architecture%20is%20a%20software,easier%20to%20evolve%20over%20time.)
 ## Domain-Driven Design Patterns
+A loosely coupled architectural design focused on separation of concerns, which uses different layers to manage the flow of data.
+
+
 
 ### [Domain Service]
 When an operation does not conceptually belong to any object and yet pertains to the domain layer, it could be implemented using the Domain Service pattern. These services hold domain logic that doesn't naturally fit within a domain object.

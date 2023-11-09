@@ -168,8 +168,11 @@ Separates an application into three interconnected components
 the model (data), the view (user interface), and the controller (processes that handle input).
 This pattern is used for designing the layout of code to decouple data access and business logic from data presentation and user interaction, simplifying future development and maintenance.
 
-### [MVVM (Model-View-ViewModel)]
+### [Model-View-ViewModel (MVVM)]
 A software architectural pattern used primarily for developing user interfaces, where it separates data representation and interaction logic from the visual elements. This pattern facilitates efficient code reusability and independent development of components, making it ideal for applications requiring a robust and dynamic UI that changes in response to data modifications or user interactions.
+
+### [Model-View-Presenter (MVP)]
+A derivation of the model–view–controller (MVC) architectural pattern which mostly used for building user interfaces. In MVP, the presenter assumes the functionality of the “middle-man”.
 
 ### [Microservices Architecture]
 Breaks down a traditional monolithic application into smaller, self-contained services, which are easier to build and maintain and can be developed independently.

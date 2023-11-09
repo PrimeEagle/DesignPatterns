@@ -144,49 +144,49 @@ This is crucial when the process of creating the domain object is complex or req
 
 ## Dependency Injection Patterns
 
-### [Constructor Injection]
+### [Constructor Injection](https://freecontent.manning.com/understanding-constructor-injection/)
 This form of dependency injection involves providing the dependencies of a class through its constructor when creating the instance. This pattern ensures that objects are fully initialized with all of their dependencies before they're used.
 Use this when you want to ensure an instance’s dependencies are provided before it is used and avoid changing the dependencies after the instance is created.
 
-### [Property Injection (Setter Injection)]
+### [Property Injection (Setter Injection)](https://freecontent.manning.com/understanding-property-injection/)
 Instead of providing the dependencies through the constructor, they are set through the class’s public properties. This pattern is useful when you need to set dependencies after an object is constructed, especially on objects created through a default constructor or objects instantiated by a framework.
 Employ this pattern if you have optional dependencies or need to change dependencies during the lifetime of an object.
 
-### [Method Injection]
+### [Method Injection](https://freecontent.manning.com/understanding-method-injection/)
 The dependencies are provided through methods. These methods can be called at any time, which means that the instance can start in an uninitialized state.
 This is helpful when an object requires different instances of the same dependency at various times during its lifetime or if it only requires a dependency under specific circumstances (not for every method call).
 
-### [Service Locator]
+### [Service Locator](https://stackify.com/service-locator-pattern/)
 Though considered an anti-pattern by some, the Service Locator is a common pattern used to find services (dependencies) in a global point in the application (usually a singleton), rather than injecting them. This often involves a registry that is aware of all the components in the system and is responsible for providing them when asked.
 
 
 ## Architectural Patterns
 These are high-level strategies that concern large-scale components, the global properties and mechanisms of a system.
 
-### [Model-View-Controller (MVC)]
+### [Model-View-Controller (MVC)](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 Separates an application into three interconnected components
 the model (data), the view (user interface), and the controller (processes that handle input).
 This pattern is used for designing the layout of code to decouple data access and business logic from data presentation and user interaction, simplifying future development and maintenance.
 
-### [Model-View-ViewModel (MVVM)]
+### [Model-View-ViewModel (MVVM)](https://www.techtarget.com/whatis/definition/Model-View-ViewModel)
 A software architectural pattern used primarily for developing user interfaces, where it separates data representation and interaction logic from the visual elements. This pattern facilitates efficient code reusability and independent development of components, making it ideal for applications requiring a robust and dynamic UI that changes in response to data modifications or user interactions.
 
-### [Model-View-Presenter (MVP)]
+### [Model-View-Presenter (MVP)](https://medium.com/huawei-developers/what-is-mvp-design-pattern-c587feea27d7)
 A derivation of the model–view–controller (MVC) architectural pattern which mostly used for building user interfaces. In MVP, the presenter assumes the functionality of the “middle-man”.
 
-### [Microservices Architecture]
+### [Microservices Architecture](https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9)
 Breaks down a traditional monolithic application into smaller, self-contained services, which are easier to build and maintain and can be developed independently.
 This approach is suitable for complex, scalable, and high-demand applications, especially those needing frequent updates or with functionality that spans multiple platforms.
 
-### [Layered Architecture (n-tier architecture)]
+### [Layered Architecture (n-tier architecture)](https://stackify.com/n-tier-architecture/)
 Organizes the application infrastructure into layers (UI, business logic, data access), each one with its own responsibilities.
 This is beneficial for traditional web applications or enterprise applications that require standardization, maintainability, and scalability but don't require high levels of scalability.
 
-### [Event-Driven Architecture]
+### [Event-Driven Architecture](https://blog.hubspot.com/website/event-driven-architecture)
 Focuses on producing, detecting, consuming, and reacting to events. This pattern is highly scalable and provides high throughput for data processing.
 Use this for applications that need real-time updates, asynchronous processing, or need to handle a high volume of requests spread across multiple services.
 
-### [Serverless Architecture]
+### [Serverless Architecture](https://www.serverless.com/blog/serverless-architecture)
 Allows developers to build and run applications without managing server infrastructure, delegating these responsibilities to cloud providers.
 This is ideal for applications that can benefit from auto-scaling, want to reduce overhead of server maintenance, or have unpredictable workloads.
 

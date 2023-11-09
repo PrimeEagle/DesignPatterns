@@ -121,23 +121,23 @@ A loosely coupled architectural design focused on separation of concerns, which 
 
 ## Domain-Driven Design Patterns
 
-### [Domain Service]
+### [Domain Service](https://alok-mishra.com/2021/04/08/domain-service-architecture-the-good-bad-and-ugly/)
 When an operation does not conceptually belong to any object and yet pertains to the domain layer, it could be implemented using the Domain Service pattern. These services hold domain logic that doesn't naturally fit within a domain object.
 You would use a Domain Service when the action you're considering transcends a single entity or entity aggregate.
 
-### [Value Object[
+### [Value Object](https://codeburst.io/value-objects-and-how-to-appreciate-them-19711c74e3cb)
 An object that contains attributes but has no conceptual identity. They should be treated as immutable.
 They are often useful when you want to group several pieces of information into a single compound value (e.g., a color, money amount, or a range of dates).
 
-### [Entity]
+### [Entity](https://badia-kharroubi.gitbooks.io/microservices-architecture/content/patterns/tactical-patterns/domain-entity-pattern.html)
 Objects that are not defined by their attributes, but rather by a thread of continuity and identity.
 Entities are used when you have a distinct object based on identity, often coming with its own lifecycle.
 
-### [Aggregate]
+### [Aggregate](https://badia-kharroubi.gitbooks.io/microservices-architecture/content/patterns/tactical-patterns/aggregate-pattern.html)
 A collection of objects that are bound together by a root entity, otherwise known as an aggregate root. Any references from outside the aggregate should only go to the aggregate root.
 This pattern is used to enforce business rules and invariants within the aggregate boundary and to simplify interaction with a complex graph of domain objects.
 
-### [Factory]
+### [Factory](https://culttt.com/2014/12/24/factories-domain-driven-design)
 In the context of DDD, a factory abstracts the process of creating complex objects or aggregates. It's responsible for providing whole, consistent objects and aggregates.
 This is crucial when the process of creating the domain object is complex or requires additional validation.
 

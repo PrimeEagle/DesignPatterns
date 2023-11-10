@@ -193,41 +193,42 @@ This is ideal for applications that can benefit from auto-scaling, want to reduc
 
 ## Integration Patterns
 
-### [Gateway]
+### [Gateway](https://microservices.io/patterns/apigateway.html)
 Encapsulates the internal system's architecture and provides an API to clients. It might include mechanisms like load balancing, caching, access control, API composition, and security.
 This is used when building applications that expose APIs over disparate underlying systems or services.
 
-### [Pipeline]
+### [Pipeline](https://medium.com/@bonnotguillaume/software-architecture-the-pipeline-design-pattern-from-zero-to-hero-b5c43d8a4e60)
 Uses a series of processing elements arranged so that the output of one element is the input of the next one. It's commonly used for tasks such as data processing or task scheduling.
 Implement this pattern when you need a series of processing steps, potentially with varying sequence, to be executed in order.
 
-### [Broker]
+### [Broker](https://medium.com/@lalosaimi/broker-pattern-297ac3cff6c5)
 Acts as a mediator between the communication of two components, providing a low-coupling, scalable, and simple-to-extend architecture.
 This pattern is useful for messaging, task processing, or handling requests where the components don't need to know about each other.
 
-### [Reactive Patterns]
+
+## [Reactive Patterns]
 These deal with software systems that maintain a consistent response time despite varying workload, typically implemented with event-driven architecture, non-blocking I/O, and other asynchronous programming techniques.
 
-### [Back Pressure]
+### [Back Pressure](https://www.c-sharpcorner.com/article/backpressure-pattern-design-principle/)
 Provides control over resource consumption and handling in systems with asynchronous processing by propagating pressure from the resource consumer to the producer.
 Use this when you need to prevent the system from crashing or becoming unresponsive due to resource overconsumption under high demand.
 
-### [Circuit Breaker]
+### [Circuit Breaker](https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 Monitors the status of external services and prevents continuous failure that can result from calling a service that is down.
 Implement this pattern in distributed systems where you want to maintain system integrity and avoid cascading failures in a microservice environment.
 
 
 ## Cloud Design Patterns
 
-### [Strangler Pattern]
+### [Strangler Pattern](https://microservices.io/patterns/refactoring/strangler-application.html)
 Incrementally migrates a legacy system by gradually replacing specific pieces of functionality with new applications and services.
 This is used when migrating an old legacy system piece by piece, rather than doing a full replacement at once.
 
-### [Sidecar Pattern]
+### [Sidecar Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)
 Deploys an additional service alongside the main application service, offering an isolated environment to execute or process specific tasks or features.
 Use this for tasks like monitoring, logging, configuration, networking, and security protocols separate from the main application logic.
 
-### [CQRS (Command Query Responsibility Segregation)]
+### [CQRS (Command Query Responsibility Segregation)](https://medium.com/design-microservices-architecture-with-patterns/cqrs-design-pattern-in-microservices-architectures-5d41e359768c)
 Separates read and update operations for a data store, optimizing performance, simplifying code, and providing more robust security.
 This pattern is useful in complex business systems where you want to achieve scalability, security, and separation of concerns by handling read and write operations differently.
 

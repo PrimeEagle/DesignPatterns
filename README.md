@@ -206,7 +206,7 @@ Acts as a mediator between the communication of two components, providing a low-
 This pattern is useful for messaging, task processing, or handling requests where the components don't need to know about each other.
 
 
-## [Reactive Patterns]
+## Reactive Patterns
 These deal with software systems that maintain a consistent response time despite varying workload, typically implemented with event-driven architecture, non-blocking I/O, and other asynchronous programming techniques.
 
 ### [Back Pressure](https://www.c-sharpcorner.com/article/backpressure-pattern-design-principle/)

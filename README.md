@@ -1,6 +1,6 @@
 # Design Patterns
 
-
+<img src="https://github.com/PrimeEagle/DesignPatterns/blob/main/design%20patterns.png?raw=true" width="250" />
 
 ## Creational Patterns
 These patterns are designed to handle object creation mechanisms, increasing the flexibility and efficiency of object creation.

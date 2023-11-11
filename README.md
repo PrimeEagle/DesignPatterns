@@ -235,46 +235,43 @@ This pattern is useful in complex business systems where you want to achieve sca
 
 ## Game Development Patterns
 
-### [Game Loop]
+### [Game Loop](https://gameprogrammingpatterns.com/game-loop.html)
 The Game Loop is the central heartbeat of most games, handling the cyclic processes of user input, game updates (logic), and rendering within a continuous loop.
 This pattern ensures smooth gameplay by maintaining a consistent flow of game updates and rendering, often aiming for a specific number of frames per second.
 
-### [Update Method]
+### [Update Method](https://gameprogrammingpatterns.com/update-method.html)
 The Update Method involves having a method that is automatically called at every frame update or tick, often used within the Game Loop, and it's where the logic for AI, character movement, physics, and more is placed.
 This keeps game elements in sync with the game world's real-time nature and helps organize how game entities are updated.
 
-### [omponent Pattern (also known as Entity-Component-System (ECS))]
+### [Component Pattern (also known as Entity-Component-System (ECS))](https://gameprogrammingpatterns.com/component.html)
 Instead of representing game objects in a deep class hierarchy, this pattern breaks down game entities into components that add functionality and allows you to treat entities as bags of interchangeable parts.
 This pattern is used for flexibility in defining game entities and better performance in updating them, especially in systems with a large number of objects (useful for both rendering and AI efficiency).
 
-### [State Pattern]
+### [Double Buffer](https://gameprogrammingpatterns.com/double-buffer.html)
+This cause a series of sequential operations to appear instantaneous or simultaneous.
+
+### [Event Queue](https://gameprogrammingpatterns.com/event-queue.html)
+Decouples when a message or event is sent from when it is processed.
+
+### [State Pattern](https://www.geeksforgeeks.org/state-design-pattern/)
 In gaming, this pattern allows an object to alter its behavior when its internal state changes, making it seem like the object's class has changed.
 This is particularly useful in game AI to manage character behaviors, where characters can have various states like patrolling, chasing, attacking, fleeing, etc.
 
-### [Singleton Pattern]
-This ensures a class has only one instance and provides a global point of access to that instance.
-Often used for managers in games, such as a game manager, audio manager, or input manager, which should be unique and accessible from everywhere.
-
-### [Behavior Trees]
+### [Behavior Trees](https://towardsdatascience.com/designing-ai-agents-behaviors-with-behavior-trees-b28aa1c3cf8a)
 This hierarchical model is used to build complex, context-sensitive behavior for game agents based on simple, reusable components called nodes. The tree structure allows for the addition of decision-making processes in the game entities.
 This pattern is used for creating intelligent and scalable AI with clear logic, especially for non-player characters (NPCs) in games.
 
-### [Finite State Machine (FSM)]
+### [Finite State Machine (FSM)](https://community.wvu.edu/~hhammar/rts/adv%20rts/statecharts%20patterns%20papers%20and%20%20examples/yacoub-ammar%20fsm%20ch%2010.pdf)
 A simple machine that mimics the logical states an entity can take on with clearly defined transitions between those states.
 This is perfect for simpler AI logic, where characters or elements have a limited number of states and behaviors.
 
-### [Navigation Mesh]
+### [Super State](https://medium.com/nerd-for-tech/the-super-state-design-pattern-166127ce7c9a#:~:text=A%20finite%20state%20machine%20describes,maintainable%20components%20(the%20states).)
+The state design pattern is used to encapsulate the behavior of an object depending on its state.
+
+### [Navigation Mesh](https://arongranberg.com/astar/docs/getstarted2.html)
 This is a data structure used in AI calculations for pathfinding, allowing an agent to navigate around a complex 3D environment by breaking down the world space into traversable polygons.
 It's used in situations where game entities need to navigate through game areas avoiding obstacles, especially in 3D games.
 
-### [Blackboard]
+### [Blackboard](https://medium.com/coinmonks/blackboard-pattern-ed3981551908)
 A shared knowledge base for communication between different AI systems (such as NPCs) that allows for both centralized and decentralized AI decision-making.
 This pattern is used when multiple AI agents need to share data and make decisions based on shared world knowledge, coordinating behavior between different agents.
-
-### [Utility System]
-Instead of traditional rule or priority-based decisions, actions are evaluated based on a utility score, considering multiple variables to decide the best action to take.
-Useful for more nuanced AI decisions, where actions aren't just based on priority or triggers but involve multiple influencing factors.
-
-### [Memento Pattern]
-Allows for a way to store and restore the game or an entity's state, useful for "undo" operations, checkpoints, or managing game saves.
-This is crucial for allowing players to save their game state and return to it later without losing progress.
